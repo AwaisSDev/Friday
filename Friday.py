@@ -282,18 +282,8 @@ def extract_code(response_text):
     return "\n".join(code_lines)
 
 contacts = {
-    'Baba': '+923006329919',
-    'Ahsan': '+923201188611',
-    'Awais': '+923337146571',
-    'baba': '+923006329919',
-    'mama': '+923346077165',
-    'mamma': '+923346077165',
-    'ahsan':' +923201188611',
-    'brother': '+923201188611',
-    'awais': '+923337146571',
-    'owais':'+923337146571',
-    'aunty': '+966 58 379 0825',
-    'zeeluapi': '+923236009894',
+    #example
+    'Abc': '+xxxxxxxxxxxxx',
 }
 
 def get_phone_number(name):
@@ -369,7 +359,7 @@ def process_query(query, contacts):
         return ""
     
     elif "check email" in query:
-        email_count = check_email("mawais9171@gmail.com", "nton ttyb xhgf mvlx")
+        email_count = check_email("youremail.com", "yourapppass")
         if email_count is not None:
             response = f"You have {email_count} emails in your inbox."
         else:
@@ -418,7 +408,7 @@ def process_query(query, contacts):
             # URL for the stabilityai/stable-fast-3d model
             API_URL = "https://api-inference.huggingface.co/models/goofyai/3d_render_style_xl"
             headers = {
-                "Authorization": "Bearer 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"
+                "Authorization": "Bearer yourapikey"
             }
             payload = {
                 "inputs": prompt
