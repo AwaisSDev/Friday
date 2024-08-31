@@ -5,7 +5,7 @@ def generate_image_via_api(prompt, filename):
     # URL for the stabilityai/stable-fast-3d model
     API_URL = "https://api-inference.huggingface.co/models/goofyai/3d_render_style_xl"
     headers = {
-        "Authorization": "Bearer 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"
+        "Authorization": "Bearer your-api-key"
     }
     payload = {
         "inputs": prompt
